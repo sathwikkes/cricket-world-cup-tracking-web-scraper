@@ -1,0 +1,1 @@
+0 11 * * * /Users/sathwikkes/opt/anaconda3/bin/python /Users/sathwikkes/code/testing/webscraping/cricket-world-cup-tracking-web-scraper/main.py
