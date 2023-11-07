@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Display</title>
+</head>
+<body>
+    <h1>Players - Highest Score</h1>
+    <ul>
+        {% for player in highest_score_players %}
+            <li>{{ player.first_name }} {{ player.last_name }} ({{ player.nationality }}) - Highest Score: {{ player.rating }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Players - Most Runs</h1>
+    <ul>
+        {% for player in most_runs_players %}
+            <li>{{ player.first_name }} {{ player.last_name }} ({{ player.nationality }}) - Most Runs: {{ player.rating }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Players - Most Wickets</h1>
+    <ul>
+        {% for player in most_wickets_players %}
+            <li>{{ player.first_name }} {{ player.last_name }} ({{ player.nationality }}) - Most Wickets: {{ player.rating }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Teams - Highest Innings Score</h1>
+    <ul>
+        {% for team in highest_innings_score_teams %}
+            <li>{{ team.stat_name }} ({{ team.country }}) - Highest Innings Score: {{ team.rating }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Teams - Best Win Percentage</h1>
+    <ul>
+        {% for team in best_win_percentage_teams %}
+            <li>{{ team.stat_name }} ({{ team.country }}) - Best Win Percentage: {{ team.rating }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
