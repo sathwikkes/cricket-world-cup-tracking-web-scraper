@@ -1,1 +1,1 @@
-0 11 * * * /Users/sathwikkes/opt/anaconda3/bin/python /Users/sathwikkes/code/testing/webscraping/cricket-world-cup-tracking-web-scraper/main.py
+0 14 * * * conda /Users/sathwikkes/miniconda3/bin/activate webscraping && /Users/sathwikkes/miniconda3/bin/python /Users/sathwikkes/code/testing/webscraping/cricket-world-cup-tracking-web-scraper/main.py
