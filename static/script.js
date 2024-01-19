@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
       for (let match in data) {
         let players = data[match]["Player Data"];
         for (let player of players) {
-          if (player["Stat Name"] === "MOST WICKETS") {
+          if (player["Stat Name"] === "HIGHEST SCORE") {
             if (player["Player Name"] === currentStreakPlayer) {
               currentStreak += 1;
             } else {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Display the result on the page
       var resultDiv = document.getElementById('result');
       resultDiv.innerHTML = `
-        <p>Player with MOST WICKETS held the stat the longest: ${longestStreakPlayer}</p>
+        <p>Player with HIGHEST SCORE held the stat the longest: ${longestStreakPlayer}</p>
         <p>Days held: ${longestStreakDays}</p>
       `;
     })
